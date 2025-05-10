@@ -141,7 +141,7 @@ function Home({ darkMode, toggleDarkMode }) {
           <div className="p-4 border-b border-surface-200 dark:border-surface-700">
             <div className="flex items-center justify-between">
               <h1 className="text-xl font-bold bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent">
-                NexusNote
+                NoteTaker
               </h1>
               <button 
                 onClick={toggleDarkMode}

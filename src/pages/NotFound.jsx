@@ -62,7 +62,7 @@ function NotFound() {
         transition={{ delay: 0.5, duration: 0.5 }}
         className="mt-16 text-surface-500 dark:text-surface-400 text-sm"
       >
-        <p>&copy; {new Date().getFullYear()} NexusNote. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} NoteTaker. All rights reserved.</p>
       </motion.div>
     </div>
   );
