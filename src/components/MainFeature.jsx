@@ -242,8 +242,9 @@ function MainFeature() {
                   ref={el => blockRefs.current[block.id] = el}
                   contentEditable
                   suppressContentEditableWarning
-                 dir="ltr"
-                  className="text-2xl md:text-3xl font-bold outline-none"
+                  dir="ltr"
+                  style={{ direction: 'ltr', textAlign: 'left' }}
+                  className="text-2xl md:text-3xl font-bold outline-none text-left"
                   placeholder={getPlaceholderText(block.type)}
                   onInput={(e) => updateBlockContent(block.id, e.currentTarget.textContent)}
                   onKeyDown={handleKeyDown}
@@ -256,8 +257,9 @@ function MainFeature() {
                   ref={el => blockRefs.current[block.id] = el}
                   contentEditable
                   suppressContentEditableWarning
-                 dir="ltr"
-                  className="text-xl md:text-2xl font-semibold outline-none"
+                  dir="ltr"
+                  style={{ direction: 'ltr', textAlign: 'left' }}
+                  className="text-xl md:text-2xl font-semibold outline-none text-left"
                   placeholder={getPlaceholderText(block.type)}
                   onInput={(e) => updateBlockContent(block.id, e.currentTarget.textContent)}
                   onKeyDown={handleKeyDown}
@@ -270,8 +272,9 @@ function MainFeature() {
                   ref={el => blockRefs.current[block.id] = el}
                   contentEditable
                   suppressContentEditableWarning
-                 dir="ltr"
-                  className="text-lg md:text-xl font-medium outline-none"
+                  dir="ltr"
+                  style={{ direction: 'ltr', textAlign: 'left' }}
+                  className="text-lg md:text-xl font-medium outline-none text-left"
                   placeholder={getPlaceholderText(block.type)}
                   onInput={(e) => updateBlockContent(block.id, e.currentTarget.textContent)}
                   onKeyDown={handleKeyDown}
@@ -301,9 +304,10 @@ function MainFeature() {
                 ref={el => blockRefs.current[block.id] = el}
                 contentEditable
                 suppressContentEditableWarning
-               dir="ltr"
-                className={`flex-1 outline-none ${block.checked ? 'line-through text-surface-400' : ''}`}
-                placeholder={getPlaceholderText(block.type)}
+                dir="ltr"
+                style={{ direction: 'ltr', textAlign: 'left' }}
+                className={`flex-1 outline-none text-left ${block.checked ? 'line-through text-surface-400' : ''}`}
+                placeholder={getPlaceholderText(block.type)} 
                 onInput={(e) => updateBlockContent(block.id, e.currentTarget.textContent)}
                 onKeyDown={handleKeyDown}
               >
@@ -318,9 +322,10 @@ function MainFeature() {
               ref={el => blockRefs.current[block.id] = el}
               contentEditable
               suppressContentEditableWarning
-             dir="ltr"
-              className="flex-1 outline-none"
-              placeholder={getPlaceholderText(block.type)}
+              dir="ltr"
+              style={{ direction: 'ltr', textAlign: 'left' }}
+              className="flex-1 outline-none text-left"
+              placeholder={getPlaceholderText(block.type)} 
               onInput={(e) => updateBlockContent(block.id, e.currentTarget.textContent)}
               onKeyDown={handleKeyDown}
             >
