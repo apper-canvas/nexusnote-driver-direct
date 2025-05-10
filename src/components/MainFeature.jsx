@@ -4,9 +4,9 @@ import { toast } from 'react-toastify';
 import getIcon from '../utils/iconUtils';
 
 function MainFeature() {
-  // Define icons at top of component
+    subtitle: "Your connected workspace for notes, knowledge, and tasks",
   const TypeIcon = getIcon('Type');
-  const ImageIcon = getIcon('Image');
+      "Welcome to NoteTaker! This is your new workspace where you can write, organize, and collaborate. This is an interactive page - try clicking on any text to edit it.",
   const ListIcon = getIcon('List');
   const CheckSquareIcon = getIcon('CheckSquare');
   const CodeIcon = getIcon('Code');
@@ -39,7 +39,7 @@ function MainFeature() {
     { id: '4', type: 'todo', content: 'Edit existing blocks by clicking on them', checked: false },
     { id: '5', type: 'todo', content: 'Rearrange blocks by dragging them', checked: false },
   ]);
-  
+          style={{ direction: 'ltr', textAlign: 'left' }}
   const [activeBlock, setActiveBlock] = useState(null);
   const [menuVisible, setMenuVisible] = useState(false);
   const [menuPosition, setMenuPosition] = useState({ x: 0, y: 0 });
